@@ -1,0 +1,236 @@
+body{
+font-family: 'Montserrat', sans-serif;
+}
+
+.barberia{
+    padding-left: 30px;
+}
+
+.principal{
+    background: #CCCCCC;
+    padding: 20px;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.banner{
+    width:100%;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa p{
+    padding: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido {
+   width: 940px;
+   margin: 0 auto;
+}
+
+.utensillos{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #fefefe;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+#mision{
+    font-size: 20px;
+}
+.diferenciales{
+    background: #888;
+    padding: 3em 0;
+}
+
+
+.items{
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.items::before{
+    content: "\2605";
+}
+
+
+.items:first-child{
+    font-weight: bold;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+.imagenDiferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000;
+}
+
+.imagenDiferenciales:hover{
+    opacity: 0.3;
+}
+
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    }
+
+nav{
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+    
+}
+
+.productos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.productos li:hover{
+    color: #c78c19;
+    
+}
+
+.productos li:active{
+    color: #088c19;
+       
+}
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+       
+}
+
+.producto-descripcion {
+    font-size: 18px;
+}
+
+.producto-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contenido-lista{
+    width: 640px;
+    margin: 0 auto;
+}
+
+
+.lista-dif{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+footer{
+    text-align: center;
+    background: url(bg.jpg);
+    padding: 40px;
+}
+
+.Copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+@media screen and (max-width:480px){
+
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+
+    .caja, .principal, .mapa-contenido, .mapa, .diferenciales, .video{
+        width: auto;
+    }
+
+    .lista-dif{
+        width: 100%;
+    }
+}

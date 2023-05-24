@@ -216,6 +216,20 @@ h6 {
   left: 0;
 }
 
+.btnimgcontact{
+  position: relative;
+  left: 20%;
+  top: -110%;
+  font-weight: 700;
+  background-color: #3713da;
+  padding: 10px 30px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.btnimgcontactA{
+  color: #fff;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/

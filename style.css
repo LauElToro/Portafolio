@@ -1,4 +1,3 @@
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -25,7 +24,8 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
-
+li{
+list-style: none;}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -216,7 +216,7 @@ h6 {
   left: 0;
 }
 
-.btnimgcontact{
+.btnimgcontact {
   position: relative;
   left: 20%;
   top: -110%;
@@ -227,16 +227,18 @@ h6 {
   cursor: pointer;
   border-radius: 20px;
 }
-.btnimgcontactA{
+
+.btnimgcontactA {
   color: #fff;
 }
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(assets/img/Squad.jpg) top center;
+  background: url(assets/img/banner2.png);
   background-size: cover;
 }
 
@@ -258,15 +260,17 @@ h6 {
 }
 
 #hero h1 {
-  margin: 0 0 10px 0;
+  margin: auto;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+  text-shadow: 15px 15px 10px #343a40;
 }
 
 #hero p {
   color: #fff;
+  margin-top: 10px;
   margin-bottom: 50px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
@@ -276,7 +280,6 @@ h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
 }
 
 @media (min-width: 1024px) {
@@ -296,6 +299,21 @@ h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
+}
+
+.carrucelDiv {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+
+.carrucelDiv img {
+  width: 20%;
+  height: auto;
+  flex: 1 0 auto;
+  margin: 0 50px;
+  background-color: transparent;
+  margin-right: 15%;
 }
 
 /*--------------------------------------------------------------
@@ -1063,20 +1081,6 @@ section {
   content: "/";
 }
 
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-
-  .breadcrumbs ol {
-    display: block;
-  }
-
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1108,5 +1112,120 @@ section {
     position: static;
     width: auto;
     padding-right: 20px 15px;
+  }
+}
+
+
+.ArticuloExp {
+  position: relative;
+  width: 80%;
+  transition: all .3s ease;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.ArticuloExp img{
+  box-shadow: 0 60px 60px -60 rgba(0, 30, 255, 0.5);
+  border-radius: 4px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.DivHover ul{
+  display: flex;
+  align-items: center;
+}
+.DivHover li{
+width: 100%;
+}
+.DivHover{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(5%);
+  transition: .3s ease;
+  opacity: 0;
+}
+.DivHover img{
+  width: 50%;
+}
+.ArticuloExp:hover{
+  transform: perspective(300px) translateZ(0);
+}
+
+.ArticuloExp::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)50%, #22549b 100%);
+  opacity: 0;
+  transform: all .3s ease;
+}
+
+.ArticuloExp:hover::before{
+  opacity: 1;
+}
+
+.DivHover:hover{
+opacity: 1;
+transform: translateY(-15%);
+} 
+.conektar{margin: auto;}
+.conektar img{
+width: 30%;
+margin-left: 33%;
+}
+
+.btnLinkP{
+  width: 30%;
+  margin-left: 33%;
+  margin-top: 1%;
+  margin-bottom: 5%;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: #149ddd;
+  position: relative;
+  border: 2px solid #149ddd;
+  outline: 1px solid;
+  outline-color: rgba(49, 138, 172, 0.4);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btnLinkP:hover{
+  box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+  outline-color: rgba(49, 138, 172, 0);
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px #fff;
+}
+
+.btnLinkP a{color: #fff;}
+
+@media (max-width: 768px) {
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+
+  .breadcrumbs ol {
+    display: block;
+  }
+
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+  .btnLinkP {
+    width: 100%;
+    height: 10%;
+    margin-left: 0;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    font-size: 18px;
   }
 }

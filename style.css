@@ -1207,7 +1207,29 @@ margin-left: 33%;
 }
 
 .btnLinkP a{color: #fff;}
-
+.btnMail{
+  width: 30%;
+  margin-left: 33%;
+  margin-top: 1%;
+  margin-bottom: 5%;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: #149ddd;
+  position: relative;
+  border: 2px solid #149ddd;
+  outline: 1px solid;
+  outline-color: rgba(49, 138, 172, 0.4);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.btnMail:hover{
+  box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+  outline-color: rgba(49, 138, 172, 0);
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px #fff;
+}
 @media (max-width: 768px) {
   .breadcrumbs .d-flex {
     display: block !important;
